@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Displays</title>
+    <link rel="stylesheet" type="text/css" href="/display.css">
+</head>
+<body>
+    <div class="display-container">
+        <h1>Viewing all Digital Displays</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No</th>
+                    <th>Scheduler System</th>
+                    <th>Model No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% displays.forEach(display => { %>
+                <tr>
+                    <td><%= display.serialNo %></td>
+                    <td><%= display.schedulerSystem %></td>
+                    <td>
+                        <%= display.modelNo %>
+                        <a href="/model/<%= display.modelNo %>">View Details</a>
+                    </td>
+                    <td>
+                        <a href="/update/<%= display.serialNo %>" class="update-button">Update</a>
+                        <form action="/display/<%= display.serialNo %>/delete" method="POST" style="display:inline;">
+                            <button type="submit" class="delete-button" onclick="return confirm('Are you sure you want to delete this display?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <div class="center">
+            <a href="/main" class="back-button">Back to Main Menu</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Digital Display</title>
+    <link rel="stylesheet" type="text/css" href="/update.css">
+</head>
+<body>
+    <div class="update-container">
+        <h1>Update Digital Display</h1>
+        <form action="/update/<%= display.serialNo %>" method="POST">
+            <label for="serialNo">Serial No:</label>
+            <input type="text" id="serialNo" name="serialNo" value="<%= display.serialNo %>" required>
+
+            <label for="schedulerSystem">Scheduler System:</label>
+            <input type="text" id="schedulerSystem" name="schedulerSystem" value="<%= display.schedulerSystem %>" required>
+
+            <label for="modelNo">Model No:</label>
+            <input type="text" id="modelNo" name="modelNo" value="<%= display.modelNo %>" required>
+
+            <div class="form-actions">
+                <button type="submit" class="save-button">Save Changes</button>
+                <a href="/display" class="cancel-button">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

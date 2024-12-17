@@ -1,0 +1,81 @@
+/* Main Page Styles */
+.main-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Menu List Styles */
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 15px 0;
+}
+
+/* Link Styles */
+.menu-list a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #bf8af0;
+}
+
+.menu-list a:hover {
+    color: #ee80c6;
+}
+
+/* Button Styling */
+button {
+    background-color: #bf8af0;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ee80c6;
+}
+
+/* Group Details Section */
+.group-details {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.group-details p {
+    margin: 5px 0;
+}
+
+.group-details strong {
+    color: #333;
+}
+
+/* Body Styling */
+body {
+    background-color: #bfbfbf; /* Light gray background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

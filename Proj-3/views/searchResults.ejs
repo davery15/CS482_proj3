@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="/searchResults.css">
+</head>
+<body>
+    <div class="results-container">
+        <h1>Search Results for Scheduler System: <%= schedulerSystem %></h1>
+        <% if (results.length > 0) { %>
+            <table class="results-table">
+                <tr>
+                    <th>Serial No</th>
+                    <th>Scheduler System</th>
+                    <th>Model No</th>
+                </tr>
+                <% results.forEach(display => { %>
+                <tr>
+                    <td><%= display.serialNo %></td>
+                    <td><%= display.schedulerSystem %></td>
+                    <td><%= display.modelNo %></td>
+                </tr>
+                <% }); %>
+            </table>
+        <% } else { %>
+            <p class="no-results">No digital displays found for the scheduler system "<%= schedulerSystem %>".</p>
+        <% } %>
+        <div class="center">
+            <a href="/search" class="back-button">Back to Search</a>
+        </div>
+    </div>
+</body>
+</html>

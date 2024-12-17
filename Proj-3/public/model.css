@@ -1,0 +1,54 @@
+/* Model Page Container */
+.model-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header Styling */
+.model-container h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Details Table Styling */
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.details-table th, .details-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.details-table th {
+    background-color: #bf8af0;
+    color: white;
+}
+
+.details-table td {
+    background-color: #f4f4f4;
+}
+
+/* Back Button Styling */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #bf8af0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #ee80c6;
+}

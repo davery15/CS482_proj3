@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Digital Display</title>
+    <link rel="stylesheet" type="text/css" href="/insert.css">
+</head>
+<body>
+    <div class="insert-container">
+        <h1>Insert a New Digital Display</h1>
+        <form action="/insert" method="POST">
+            <label for="serialNo">Serial No:</label>
+            <input type="text" id="serialNo" name="serialNo" placeholder="Enter Serial Number" required>
+
+            <label for="schedulerSystem">Scheduler System:</label>
+            <input type="text" id="schedulerSystem" name="schedulerSystem" placeholder="Enter Scheduler System" required>
+
+            <label for="modelNo">Model No:</label>
+            <input type="text" id="modelNo" name="modelNo" placeholder="Enter Model Number" required>
+
+            <div class="form-actions">
+                <button type="submit" class="insert-button">Insert</button>
+                <a href="/display" class="cancel-button">Back to Display</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
